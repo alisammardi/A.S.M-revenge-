@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>انتقام علی سام 😎</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #eee;
+      font-family: 'Tahoma', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+    }
+    p {
+      color: #888;
+      cursor: pointer;
+    }
+    p:hover {
+      color: #4caf50;
+    }
+    #message {
+      margin-top: 1.5rem;
+      font-size: 1.2rem;
+      color: #4caf50;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    #message.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>👀 این سایت مخصوص آدمای ضعیف نیست!</h1>
+  <p>🚀 ساخته شده توسط علی سام</p>
+  <p id="clickMe">(فقط یه شاخ می‌تونه اینو لمس کنه)</p>
+  <div id="message">😂خسته نباشی پهلوان</div>
+
+  <script>
+    const clickMe = document.getElementById('clickMe');
+    const message = document.getElementById('message');
+    clickMe.addEventListener('click', () => {
+      message.classList.add('show');
+    });
+  </script>
+</body>
+</html>
